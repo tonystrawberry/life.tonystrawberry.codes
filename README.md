@@ -19,6 +19,8 @@
 
 ## ⚜️ Architecture
 
+<img src="https://raw.githubusercontent.com/tonystrawberry/life.tonystrawberry.codes/main/documentation/architecture.drawio.png" />
+
 ## 🏃🏻 Usage
 
 1. Authenticate on AWS with Terraform using one of the [supported authentication methods](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication-and-configuration).
@@ -33,7 +35,7 @@
 5. Run `terraform apply` for provisioning the resources.
 6. Login into AWS. Connect to your provisioned EC2 using Session Manager. Follow the steps below.
 
-  ```  
+  ```
   # Edit the following lines in the wp-config.php file
   # using `sudo nano wordpress/wp-config.php`
   #   define('DB_NAME', 'wordpress-db');
@@ -51,8 +53,8 @@
   #   define('SECURE_AUTH_SALT', 'd!uRu#}+q#{f$Z?Z9uFPG.${+S{n~1M&%@~gL>U>NV<zpD-@2-Es7Q1O-bp28EKv');
   #   define('LOGGED_IN_SALT',   ';j{00P*owZf)kVD+FVLn-~ >.|Y%Ug4#I^*LVd9QeZ^&XmK|e(76miC+&W&+^0P/');
   #   define('NONCE_SALT',       '-97r*V/cgxLmp?Zy4zUU4r99QQ_rGs2LTd%P;|_e1tS)8_B/,.6[=UK<J_y9?JWG');
-  
-  
+
+
   # Allow Wordpress to use permalinks
   # using `sudo vim /etc/httpd/conf/httpd.conf` and modify the AllowOverride directive
   #   <Directory "/var/www/html">
