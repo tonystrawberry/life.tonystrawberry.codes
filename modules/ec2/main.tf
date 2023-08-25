@@ -14,12 +14,12 @@ data "aws_ami" "amazon_linux_2023_ami" {
 
 # Create an EC2 instance for the project (WordPress)
 resource "aws_instance" "aws_instance_wordpress" {
-  ami = data.aws_ami.amazon_linux_2023_ami.id
-  instance_type = var.instance_type
-  subnet_id = var.subnet_id
+  ami                    = data.aws_ami.amazon_linux_2023_ami.id
+  instance_type          = var.instance_type
+  subnet_id              = var.subnet_id
   vpc_security_group_ids = [var.security_group_id]
-  user_data = file("./scripts/userdata.sh")
-  iam_instance_profile = aws_iam_instance_profile.aws_iam_instance_profile.name
+  user_data              = file("./scripts/userdata.sh")
+  iam_instance_profile   = aws_iam_instance_profile.aws_iam_instance_profile.name
 
   tags = {
     Name = "${var.project}-ec2-wordpress"
