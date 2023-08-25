@@ -10,7 +10,9 @@
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.13.1 |
 
 ## Modules
 
@@ -23,7 +25,9 @@ No providers.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [aws_region.tf-docs-provider-workaround](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/region) | data source |
 
 ## Inputs
 
@@ -37,5 +41,5 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_wordpress_public_ip"></a> [wordpress\_public\_ip](#output\_wordpress\_public\_ip) | n/a |
+| <a name="output_wordpress_public_ip"></a> [wordpress\_public\_ip](#output\_wordpress\_public\_ip) | The public IP address of the EC2 instance |
 <!-- END_TF_DOCS -->
