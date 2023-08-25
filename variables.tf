@@ -9,3 +9,9 @@ variable "project" {
   type        = string
   default     = "life-tonystrawberry-codes"
 }
+
+variable "domain" {
+  description = "The domain to use for the DNS zone"
+  type        = string
+  default     = "tonystrawberry.codes"
+}

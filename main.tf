@@ -18,3 +18,10 @@ module "network" {
 
   project = var.project
 }
+
+module "dns" {
+  source = "./modules/dns"
+
+  domain = var.domain
+  wordpress_public_ip = module.ec2.wordpress_public_ip
+}
