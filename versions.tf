@@ -27,3 +27,9 @@ provider "aws" {
     }
   }
 }
+
+data "aws_region" "tf-docs-provider-workaround" {
+  # This is a workaround for a bug in the Terraform documentation
+  # generation. See https://github.com/terraform-docs/terraform-docs/issues/371
+  # for more information.
+}
